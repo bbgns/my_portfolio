@@ -78,7 +78,7 @@ header {
     width: 100%;
     height: 50px;
     z-index: 100;
-    background: rgba(0, 0, 0, 0.4);
+    background: #ffafc2;
     backdrop-filter: blur(30px);
 }
 
@@ -111,11 +111,11 @@ nav a {
 
 nav a.active,
 nav a:hover {
-    color: #111;
+    color: #ff2454;
 }
 
 .contact-btn a {
-    background-color: #000000;
+    background-color: #ff2454;
     border-radius: 50px;
     color: #fff;
     padding: 10px 20px;
@@ -124,7 +124,7 @@ nav a:hover {
 .contact-btn a.active,
 .contact-btn a:hover {
     background-color: #fff;
-    color: #111;
+    color: #ff2454;
 }
 
 /* ===== mobile nav ===== */
@@ -308,9 +308,9 @@ main {
 }
 
 .timeline-year {
-    color: #3b82f6;
+    color: #ffa5b9;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 25px;
 }
 
 .timeline-role strong {
@@ -320,7 +320,7 @@ main {
 }
 
 .timeline-role span {
-    color: #64748b;
+    color: #964657;
     font-size: 0.96rem;
 }
 
@@ -694,7 +694,7 @@ main {
     margin-top: 30px;
     padding: 15px 40px;
     background: #fff;
-    color: #111;
+    color: #ff2454;
     border-radius: 50px;
     font-weight: 700;
     position: relative;
@@ -709,7 +709,7 @@ main {
     left: 0;
     width: 100%;
     height: 0%;
-    background: #3b82f6;
+    background: #ff2454;
     transition: height 0.3s;
     z-index: -1;
 }
