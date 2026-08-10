@@ -55,7 +55,7 @@ window.addEventListener("scroll", () => {
     // ⭐ contact (맨 아래)
     if (scrollBottom) {
         current = "contact";
-    } 
+    }
     // ⭐ 나머지 섹션
     else {
         sections.forEach(section => {
@@ -190,3 +190,28 @@ function closeModal() {
 
 modal.addEventListener('click', (e) => { if (e.target === modal) closeModal(); });
 document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeModal(); });
+
+const artworkSwiper = new Swiper(".artworkSwiper", {
+    slidesPerView: 1.15,
+    spaceBetween: 20,
+
+    pagination: {
+        el: ".artwork-pagination",
+        clickable: true,
+    },
+
+    breakpoints: {
+
+        // 태블릿
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 24,
+        },
+
+        // PC
+        1024: {
+            slidesPerView: 2.3,
+            spaceBetween: 30,
+        }
+    }
+});
