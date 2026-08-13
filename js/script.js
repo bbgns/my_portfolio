@@ -215,3 +215,26 @@ const artworkSwiper = new Swiper(".artworkSwiper", {
         }
     }
 });
+
+const openKakaoFigma = document.getElementById("openKakaoFigma");
+const kakaoFigmaModal = document.getElementById("kakaoFigmaModal");
+const closeKakaoFigma = document.getElementById("closeKakaoFigma");
+
+openKakaoFigma.addEventListener("click", function (e) {
+    e.preventDefault();
+
+    kakaoFigmaModal.classList.add("show");
+    document.body.style.overflow = "hidden";
+});
+
+closeKakaoFigma.addEventListener("click", function () {
+    kakaoFigmaModal.classList.remove("show");
+    document.body.style.overflow = "";
+});
+
+kakaoFigmaModal.addEventListener("click", function (e) {
+    if (e.target === kakaoFigmaModal) {
+        kakaoFigmaModal.classList.remove("show");
+        document.body.style.overflow = "";
+    }
+});
